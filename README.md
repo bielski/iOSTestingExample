@@ -5,3 +5,7 @@ Repository contains simple iOS application written in Swift with a set of exempl
 - FBSnapshotTestCase
 - Xcode 7 UI Testing
 - Wiremock
+
+To run project you need: 
+- Xcode 7.X https://developer.apple.com/xcode/
+- Cocoapods https://cocoapods.org
