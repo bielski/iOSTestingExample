@@ -19,6 +19,7 @@
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ohf-4H-ngs">
                                 <rect key="frame" x="229" y="285" width="143" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="answearTextField"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="143" id="PDq-zo-ryM"/>
                                     <constraint firstAttribute="height" constant="30" id="stH-sJ-Q1h"/>
@@ -28,13 +29,18 @@
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What makes you happy?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9W7-jh-3XE">
                                 <rect key="frame" x="207" y="256" width="187" height="21"/>
+                                <accessibility key="accessibilityConfiguration" identifier="questionLabel"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bpf-c2-J5J">
                                 <rect key="frame" x="283" y="370" width="34" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="sendButton"/>
                                 <state key="normal" title="send"/>
+                                <connections>
+                                    <action selector="sendButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fwF-6I-PXa"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -53,6 +59,10 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="answearTextField" destination="ohf-4H-ngs" id="hrS-jw-HL3"/>
+                        <outlet property="sendButton" destination="Bpf-c2-J5J" id="V8S-ds-oV3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

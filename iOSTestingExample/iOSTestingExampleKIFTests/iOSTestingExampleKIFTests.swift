@@ -17,6 +17,10 @@ extension XCTestCase {
     private func tester(file : String = #file, _ line : Int = #line) -> KIFUITestActor {
         return KIFUITestActor(inFile: file, atLine: line, delegate: self)
     }
+
+    private func viewTester(file : String = #file, _ line : Int = #line) -> KIFUIViewTestActor {
+        return KIFUIViewTestActor(inFile: file, atLine: line, delegate: self)
+    }
     
     private func system(file : String = #file, _ line : Int = #line) -> KIFSystemTestActor {
         return KIFSystemTestActor(inFile: file, atLine: line, delegate: self)
@@ -25,14 +29,9 @@ extension XCTestCase {
 
 class iOSTestingExampleKIFTests: KIFTestCase {
     
-    override func setUp() {
-        super.setUp()
-    }
-    
-    override func tearDown() {
-        super.tearDown()
-    }
-    
-    func testExample() {
+    func testViewControllerLayout() {
+        viewTester().usingIdentifier("questionLabel").waitForView()
+        viewTester().usingIdentifier("answearTextField").waitToBecomeTappable()
+        viewTester().usingIdentifier("sendButton").waitToBecomeTappable()
     }
 }
