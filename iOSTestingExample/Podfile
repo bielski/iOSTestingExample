@@ -12,7 +12,8 @@ target 'iOSTestingExampleTests' do
 end
 
 target 'iOSTestingExampleUITests' do
-
 end
 
-
+target 'iOSTestingExampleKIFTests' do
+    pod 'KIF', '~> 3.4.2', :configurations => ['Debug']
+end
