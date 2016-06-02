@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		81057BC76A9B16F4B0037D27 /* Pods_iOSTestingExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7427BA2ED61C766D672EC1C /* Pods_iOSTestingExampleTests.framework */; };
 		986EEAF93A9EDC0253579EB5 /* Pods_iOSTestingExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E19DEDF6A0E92AF34F5524BE /* Pods_iOSTestingExample.framework */; };
+		9C6390281D00CE7600260D99 /* ContentSizeCategoryMocker.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6390251D00CE7600260D99 /* ContentSizeCategoryMocker.m */; };
+		9C6390291D00CE7600260D99 /* SnapshotTestsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6390271D00CE7600260D99 /* SnapshotTestsHelper.swift */; };
 		9C7C88951D00BAC00022B8B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C88941D00BAC00022B8B2 /* AppDelegate.swift */; };
 		9C7C88971D00BAC00022B8B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C88961D00BAC00022B8B2 /* ViewController.swift */; };
 		9C7C889A1D00BAC00022B8B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C7C88981D00BAC00022B8B2 /* Main.storyboard */; };
 		9C7C889C1D00BAC00022B8B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C7C889B1D00BAC00022B8B2 /* Assets.xcassets */; };
 		9C7C889F1D00BAC00022B8B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C7C889D1D00BAC00022B8B2 /* LaunchScreen.storyboard */; };
-		9C7C88AA1D00BAC00022B8B2 /* iOSTestingExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C88A91D00BAC00022B8B2 /* iOSTestingExampleTests.swift */; };
+		9C7C88AA1D00BAC00022B8B2 /* iOSTestingExampleSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C88A91D00BAC00022B8B2 /* iOSTestingExampleSnapshotTests.swift */; };
 		9C7C88B51D00BAC00022B8B2 /* iOSTestingExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C88B41D00BAC00022B8B2 /* iOSTestingExampleUITests.swift */; };
 		9C7C88C91D00BE060022B8B2 /* iOSTestingExampleKIFTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C88C81D00BE060022B8B2 /* iOSTestingExampleKIFTests.swift */; };
 		F36752E23772BF8D5629BA82 /* Pods_iOSTestingExampleKIFTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16345569E797CFBB7306A069 /* Pods_iOSTestingExampleKIFTests.framework */; };
@@ -48,6 +50,10 @@
 		16345569E797CFBB7306A069 /* Pods_iOSTestingExampleKIFTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSTestingExampleKIFTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16F81DBCC553CA9A699D6EAB /* Pods-iOSTestingExampleKIFTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTestingExampleKIFTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSTestingExampleKIFTests/Pods-iOSTestingExampleKIFTests.release.xcconfig"; sourceTree = "<group>"; };
 		8B7801CD5902876C3DDBA637 /* Pods-iOSTestingExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTestingExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSTestingExampleTests/Pods-iOSTestingExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		9C6390241D00CE7600260D99 /* ContentSizeCategoryMocker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentSizeCategoryMocker.h; sourceTree = "<group>"; };
+		9C6390251D00CE7600260D99 /* ContentSizeCategoryMocker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentSizeCategoryMocker.m; sourceTree = "<group>"; };
+		9C6390271D00CE7600260D99 /* SnapshotTestsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotTestsHelper.swift; sourceTree = "<group>"; };
+		9C6461031D00D26E0039E8B2 /* iOSTestingExampleTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iOSTestingExampleTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		9C7C88911D00BAC00022B8B2 /* iOSTestingExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTestingExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C7C88941D00BAC00022B8B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C7C88961D00BAC00022B8B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,7 +62,7 @@
 		9C7C889E1D00BAC00022B8B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C7C88A01D00BAC00022B8B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C7C88A51D00BAC00022B8B2 /* iOSTestingExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSTestingExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C7C88A91D00BAC00022B8B2 /* iOSTestingExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSTestingExampleTests.swift; sourceTree = "<group>"; };
+		9C7C88A91D00BAC00022B8B2 /* iOSTestingExampleSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = iOSTestingExampleSnapshotTests.swift; path = ../iOSTestingExampleSnapshotTests.swift; sourceTree = "<group>"; };
 		9C7C88AB1D00BAC00022B8B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C7C88B01D00BAC00022B8B2 /* iOSTestingExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSTestingExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C7C88B41D00BAC00022B8B2 /* iOSTestingExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSTestingExampleUITests.swift; sourceTree = "<group>"; };
@@ -131,6 +137,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9C6390221D00CE5E00260D99 /* SnapshotTests */ = {
+			isa = PBXGroup;
+			children = (
+				9C7C88A91D00BAC00022B8B2 /* iOSTestingExampleSnapshotTests.swift */,
+				9C6390231D00CE7600260D99 /* SnapshotHelper */,
+			);
+			path = SnapshotTests;
+			sourceTree = "<group>";
+		};
+		9C6390231D00CE7600260D99 /* SnapshotHelper */ = {
+			isa = PBXGroup;
+			children = (
+				9C6461031D00D26E0039E8B2 /* iOSTestingExampleTests-Bridging-Header.h */,
+				9C6390241D00CE7600260D99 /* ContentSizeCategoryMocker.h */,
+				9C6390251D00CE7600260D99 /* ContentSizeCategoryMocker.m */,
+				9C6390271D00CE7600260D99 /* SnapshotTestsHelper.swift */,
+			);
+			path = SnapshotHelper;
+			sourceTree = "<group>";
+		};
 		9C7C88881D00BAC00022B8B2 = {
 			isa = PBXGroup;
 			children = (
@@ -171,7 +197,7 @@
 		9C7C88A81D00BAC00022B8B2 /* iOSTestingExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				9C7C88A91D00BAC00022B8B2 /* iOSTestingExampleTests.swift */,
+				9C6390221D00CE5E00260D99 /* SnapshotTests */,
 				9C7C88AB1D00BAC00022B8B2 /* Info.plist */,
 			);
 			path = iOSTestingExampleTests;
@@ -513,7 +539,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C7C88AA1D00BAC00022B8B2 /* iOSTestingExampleTests.swift in Sources */,
+				9C7C88AA1D00BAC00022B8B2 /* iOSTestingExampleSnapshotTests.swift in Sources */,
+				9C6390291D00CE7600260D99 /* SnapshotTestsHelper.swift in Sources */,
+				9C6390281D00CE7600260D99 /* ContentSizeCategoryMocker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -689,6 +717,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ewabielska.iOSTestingExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOSTestingExampleTests/SnapshotTests/SnapshotHelper/iOSTestingExampleTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSTestingExample.app/iOSTestingExample";
 			};
 			name = Debug;
@@ -702,6 +731,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ewabielska.iOSTestingExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOSTestingExampleTests/SnapshotTests/SnapshotHelper/iOSTestingExampleTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSTestingExample.app/iOSTestingExample";
 			};
 			name = Release;

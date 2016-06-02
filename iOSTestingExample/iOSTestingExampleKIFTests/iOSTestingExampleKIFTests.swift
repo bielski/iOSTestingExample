@@ -29,7 +29,7 @@ extension XCTestCase {
 
 class iOSTestingExampleKIFTests: KIFTestCase {
     
-    func testViewControllerLayout() {
+    func testMainViewControllerLayout() {
         viewTester().usingIdentifier("questionLabel").waitForView()
         viewTester().usingIdentifier("answearTextField").waitToBecomeTappable()
         viewTester().usingIdentifier("sendButton").waitToBecomeTappable()
