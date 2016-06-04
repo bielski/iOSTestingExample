@@ -22,7 +22,13 @@ class iOSTestingExampleSnapshotTests: FBSnapshotTestCase {
     override func tearDown() {
         super.tearDown()
     }
-    
+
+    // MARK: Simple test of main view controller
+    func testMainViewController() {
+        let view = mainView()
+        FBSnapshotVerifyView(view)
+    }
+
     // MARK: Test uses performTestViewOnFourPlatformsWithoutAccessibilityInPortraitAndLandscapeWithView function
     // to test view on four devices in both orientations (but without different font sizes)
     func testMainViewControllerWithoutAccessibility() {
