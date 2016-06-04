@@ -26,6 +26,7 @@ class iOSTestingExampleSnapshotTests: FBSnapshotTestCase {
     // MARK: Simple test of main view controller
     func testMainViewController() {
         let view = mainView()
+
         FBSnapshotVerifyView(view)
     }
 
@@ -33,13 +34,14 @@ class iOSTestingExampleSnapshotTests: FBSnapshotTestCase {
     // to test view on four devices in both orientations (but without different font sizes)
     func testMainViewControllerWithoutAccessibility() {
         let view = mainView()
-        performTestViewOnFourPlatformsWithoutAccessibilityInPortraitAndLandscapeWithView(view, height: Double(iPhone5Height))
+    performTestViewOnFourPlatformsWithoutAccessibilityInPortraitAndLandscapeWithView(view, height: Double(iPhone5Height))
     }
     
     // MARK: Test uses performTestViewOnFourPlatformsWithAccessibilityWithView function
     // to test view on four devices in portrait orientation (with different font sizes)
     func testMainViewControllerWithAccessibility() {
         let view = mainView()
+
         performTestViewOnFourPlatformsWithAccessibilityWithView(view, height: Double(iPhone5Height))
     }
     

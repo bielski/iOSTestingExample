@@ -28,10 +28,24 @@ extension XCTestCase {
 }
 
 class iOSTestingExampleKIFTests: KIFTestCase {
-    
+
+    let testAnswear = "I really like it!"
+
     func testMainViewControllerLayout() {
         viewTester().usingIdentifier("questionLabel").waitForView()
         viewTester().usingIdentifier("answearTextField").waitToBecomeTappable()
         viewTester().usingIdentifier("sendButton").waitToBecomeTappable()
+    }
+
+    func testAfterEnteringAnswearAndTappingButtonSendTextFieldShouldBeEmpty() {
+        // Enter text into text field
+        viewTester().usingIdentifier("answearTextField").enterText(testAnswear, expectedResult: testAnswear)
+
+        // Tap send button
+        viewTester().usingIdentifier("sendButton").tap()
+
+        // Assert if text field accessibilityValue is nil
+        XCTAssertNil(viewTester().usingIdentifier("answearTextField").accessibilityValue)
+        XCTAssert((viewTester().usingIdentifier("answearTextField").waitForView() as! UITextField).text == "")
     }
 }
