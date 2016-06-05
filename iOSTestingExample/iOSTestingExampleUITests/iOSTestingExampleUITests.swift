@@ -9,7 +9,7 @@
 import XCTest
 
 class iOSTestingExampleUITests: XCTestCase {
-        
+
     override func setUp() {
         super.setUp()
         continueAfterFailure = false
@@ -19,7 +19,17 @@ class iOSTestingExampleUITests: XCTestCase {
     override func tearDown() {
         super.tearDown()
     }
+
+    let app = XCUIApplication()
     
-    func testExample() {
+    func testMainViewControllerLayout() {
+
+        XCTAssertTrue(app.images["wrotQA-logo"].exists)
+        XCTAssertTrue(app.staticTexts["questionLabel"].exists)
+        XCTAssertTrue(app.textFields["answearTextField"].exists)
+        XCTAssertTrue(app.buttons["sendButton"].exists)
+    }
+
+    func testAfterEnteringAnswearAndTappingButtonSendTextFieldShouldBeEmpty() {
     }
 }

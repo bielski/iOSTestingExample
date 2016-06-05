@@ -7,6 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4316EDAD1D04AAEF00DEF70A /* iOSTestingExampleUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4316EDAC1D04AAEF00DEF70A /* iOSTestingExampleUnitTests.swift */; };
+		43EAE9B31D04B8FA0022E783 /* testMainViewController_iPhone9_3_375x667@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43EAE99E1D04B8FA0022E783 /* testMainViewController_iPhone9_3_375x667@2x.png */; };
+		43EAE9B41D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPad_PortraitUICTContentSizeCategoryM_iPhone9_3_375x667@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43EAE99F1D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPad_PortraitUICTContentSizeCategoryM_iPhone9_3_375x667@2x.png */; };
+		43EAE9B51D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPad_PortraitUICTContentSizeCategoryXS_iPhone9_3_375x667@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43EAE9A01D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPad_PortraitUICTContentSizeCategoryXS_iPhone9_3_375x667@2x.png */; };
+		43EAE9B61D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPad_PortraitUICTContentSizeCategoryXXXL_iPhone9_3_375x667@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43EAE9A11D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPad_PortraitUICTContentSizeCategoryXXXL_iPhone9_3_375x667@2x.png */; };
+		43EAE9B71D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone4_PortraitUICTContentSizeCategoryM_iPhone9_3_375x667@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43EAE9A21D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone4_PortraitUICTContentSizeCategoryM_iPhone9_3_375x667@2x.png */; };
+		43EAE9B81D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone4_PortraitUICTContentSizeCategoryXS_iPhone9_3_375x667@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43EAE9A31D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone4_PortraitUICTContentSizeCategoryXS_iPhone9_3_375x667@2x.png */; };
+		43EAE9B91D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone4_PortraitUICTContentSizeCategoryXXXL_iPhone9_3_375x667@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43EAE9A41D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone4_PortraitUICTContentSizeCategoryXXXL_iPhone9_3_375x667@2x.png */; };
+		43EAE9BA1D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone6_PortraitUICTContentSizeCategoryM_iPhone9_3_375x667@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43EAE9A51D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone6_PortraitUICTContentSizeCategoryM_iPhone9_3_375x667@2x.png */; };
+		43EAE9BB1D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone6_PortraitUICTContentSizeCategoryXS_iPhone9_3_375x667@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43EAE9A61D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone6_PortraitUICTContentSizeCategoryXS_iPhone9_3_375x667@2x.png */; };
+		43EAE9BC1D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone6_PortraitUICTContentSizeCategoryXXXL_iPhone9_3_375x667@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43EAE9A71D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone6_PortraitUICTContentSizeCategoryXXXL_iPhone9_3_375x667@2x.png */; };
+		43EAE9BD1D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone6Plus_PortraitUICTContentSizeCategoryM_iPhone9_3_375x667@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43EAE9A81D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone6Plus_PortraitUICTContentSizeCategoryM_iPhone9_3_375x667@2x.png */; };
+		43EAE9BE1D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone6Plus_PortraitUICTContentSizeCategoryXS_iPhone9_3_375x667@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43EAE9A91D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone6Plus_PortraitUICTContentSizeCategoryXS_iPhone9_3_375x667@2x.png */; };
+		43EAE9BF1D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone6Plus_PortraitUICTContentSizeCategoryXXXL_iPhone9_3_375x667@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43EAE9AA1D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone6Plus_PortraitUICTContentSizeCategoryXXXL_iPhone9_3_375x667@2x.png */; };
+		43EAE9C01D04B8FA0022E783 /* testMainViewControllerWithoutAccessibility_iPad_LandscapeUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43EAE9AB1D04B8FA0022E783 /* testMainViewControllerWithoutAccessibility_iPad_LandscapeUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png */; };
+		43EAE9C11D04B8FA0022E783 /* testMainViewControllerWithoutAccessibility_iPad_PortraitUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43EAE9AC1D04B8FA0022E783 /* testMainViewControllerWithoutAccessibility_iPad_PortraitUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png */; };
+		43EAE9C21D04B8FA0022E783 /* testMainViewControllerWithoutAccessibility_iPhone4_LandscapeUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43EAE9AD1D04B8FA0022E783 /* testMainViewControllerWithoutAccessibility_iPhone4_LandscapeUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png */; };
+		43EAE9C31D04B8FA0022E783 /* testMainViewControllerWithoutAccessibility_iPhone4_PortraitUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43EAE9AE1D04B8FA0022E783 /* testMainViewControllerWithoutAccessibility_iPhone4_PortraitUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png */; };
+		43EAE9C41D04B8FA0022E783 /* testMainViewControllerWithoutAccessibility_iPhone6_LandscapeUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43EAE9AF1D04B8FA0022E783 /* testMainViewControllerWithoutAccessibility_iPhone6_LandscapeUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png */; };
+		43EAE9C51D04B8FA0022E783 /* testMainViewControllerWithoutAccessibility_iPhone6_PortraitUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43EAE9B01D04B8FA0022E783 /* testMainViewControllerWithoutAccessibility_iPhone6_PortraitUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png */; };
+		43EAE9C61D04B8FA0022E783 /* testMainViewControllerWithoutAccessibility_iPhone6Plus_LandscapeUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43EAE9B11D04B8FA0022E783 /* testMainViewControllerWithoutAccessibility_iPhone6Plus_LandscapeUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png */; };
+		43EAE9C71D04B8FA0022E783 /* testMainViewControllerWithoutAccessibility_iPhone6Plus_PortraitUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43EAE9B21D04B8FA0022E783 /* testMainViewControllerWithoutAccessibility_iPhone6Plus_PortraitUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png */; };
 		81057BC76A9B16F4B0037D27 /* Pods_iOSTestingExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7427BA2ED61C766D672EC1C /* Pods_iOSTestingExampleTests.framework */; };
 		986EEAF93A9EDC0253579EB5 /* Pods_iOSTestingExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E19DEDF6A0E92AF34F5524BE /* Pods_iOSTestingExample.framework */; };
 		9C6390281D00CE7600260D99 /* ContentSizeCategoryMocker.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6390251D00CE7600260D99 /* ContentSizeCategoryMocker.m */; };
@@ -49,6 +71,28 @@
 /* Begin PBXFileReference section */
 		16345569E797CFBB7306A069 /* Pods_iOSTestingExampleKIFTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSTestingExampleKIFTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16F81DBCC553CA9A699D6EAB /* Pods-iOSTestingExampleKIFTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTestingExampleKIFTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSTestingExampleKIFTests/Pods-iOSTestingExampleKIFTests.release.xcconfig"; sourceTree = "<group>"; };
+		4316EDAC1D04AAEF00DEF70A /* iOSTestingExampleUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOSTestingExampleUnitTests.swift; sourceTree = "<group>"; };
+		43EAE99E1D04B8FA0022E783 /* testMainViewController_iPhone9_3_375x667@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testMainViewController_iPhone9_3_375x667@2x.png"; sourceTree = "<group>"; };
+		43EAE99F1D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPad_PortraitUICTContentSizeCategoryM_iPhone9_3_375x667@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testMainViewControllerWithAccessibility_iPad_PortraitUICTContentSizeCategoryM_iPhone9_3_375x667@2x.png"; sourceTree = "<group>"; };
+		43EAE9A01D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPad_PortraitUICTContentSizeCategoryXS_iPhone9_3_375x667@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testMainViewControllerWithAccessibility_iPad_PortraitUICTContentSizeCategoryXS_iPhone9_3_375x667@2x.png"; sourceTree = "<group>"; };
+		43EAE9A11D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPad_PortraitUICTContentSizeCategoryXXXL_iPhone9_3_375x667@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testMainViewControllerWithAccessibility_iPad_PortraitUICTContentSizeCategoryXXXL_iPhone9_3_375x667@2x.png"; sourceTree = "<group>"; };
+		43EAE9A21D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone4_PortraitUICTContentSizeCategoryM_iPhone9_3_375x667@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testMainViewControllerWithAccessibility_iPhone4_PortraitUICTContentSizeCategoryM_iPhone9_3_375x667@2x.png"; sourceTree = "<group>"; };
+		43EAE9A31D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone4_PortraitUICTContentSizeCategoryXS_iPhone9_3_375x667@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testMainViewControllerWithAccessibility_iPhone4_PortraitUICTContentSizeCategoryXS_iPhone9_3_375x667@2x.png"; sourceTree = "<group>"; };
+		43EAE9A41D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone4_PortraitUICTContentSizeCategoryXXXL_iPhone9_3_375x667@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testMainViewControllerWithAccessibility_iPhone4_PortraitUICTContentSizeCategoryXXXL_iPhone9_3_375x667@2x.png"; sourceTree = "<group>"; };
+		43EAE9A51D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone6_PortraitUICTContentSizeCategoryM_iPhone9_3_375x667@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testMainViewControllerWithAccessibility_iPhone6_PortraitUICTContentSizeCategoryM_iPhone9_3_375x667@2x.png"; sourceTree = "<group>"; };
+		43EAE9A61D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone6_PortraitUICTContentSizeCategoryXS_iPhone9_3_375x667@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testMainViewControllerWithAccessibility_iPhone6_PortraitUICTContentSizeCategoryXS_iPhone9_3_375x667@2x.png"; sourceTree = "<group>"; };
+		43EAE9A71D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone6_PortraitUICTContentSizeCategoryXXXL_iPhone9_3_375x667@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testMainViewControllerWithAccessibility_iPhone6_PortraitUICTContentSizeCategoryXXXL_iPhone9_3_375x667@2x.png"; sourceTree = "<group>"; };
+		43EAE9A81D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone6Plus_PortraitUICTContentSizeCategoryM_iPhone9_3_375x667@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testMainViewControllerWithAccessibility_iPhone6Plus_PortraitUICTContentSizeCategoryM_iPhone9_3_375x667@2x.png"; sourceTree = "<group>"; };
+		43EAE9A91D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone6Plus_PortraitUICTContentSizeCategoryXS_iPhone9_3_375x667@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testMainViewControllerWithAccessibility_iPhone6Plus_PortraitUICTContentSizeCategoryXS_iPhone9_3_375x667@2x.png"; sourceTree = "<group>"; };
+		43EAE9AA1D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone6Plus_PortraitUICTContentSizeCategoryXXXL_iPhone9_3_375x667@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testMainViewControllerWithAccessibility_iPhone6Plus_PortraitUICTContentSizeCategoryXXXL_iPhone9_3_375x667@2x.png"; sourceTree = "<group>"; };
+		43EAE9AB1D04B8FA0022E783 /* testMainViewControllerWithoutAccessibility_iPad_LandscapeUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testMainViewControllerWithoutAccessibility_iPad_LandscapeUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png"; sourceTree = "<group>"; };
+		43EAE9AC1D04B8FA0022E783 /* testMainViewControllerWithoutAccessibility_iPad_PortraitUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testMainViewControllerWithoutAccessibility_iPad_PortraitUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png"; sourceTree = "<group>"; };
+		43EAE9AD1D04B8FA0022E783 /* testMainViewControllerWithoutAccessibility_iPhone4_LandscapeUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testMainViewControllerWithoutAccessibility_iPhone4_LandscapeUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png"; sourceTree = "<group>"; };
+		43EAE9AE1D04B8FA0022E783 /* testMainViewControllerWithoutAccessibility_iPhone4_PortraitUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testMainViewControllerWithoutAccessibility_iPhone4_PortraitUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png"; sourceTree = "<group>"; };
+		43EAE9AF1D04B8FA0022E783 /* testMainViewControllerWithoutAccessibility_iPhone6_LandscapeUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testMainViewControllerWithoutAccessibility_iPhone6_LandscapeUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png"; sourceTree = "<group>"; };
+		43EAE9B01D04B8FA0022E783 /* testMainViewControllerWithoutAccessibility_iPhone6_PortraitUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testMainViewControllerWithoutAccessibility_iPhone6_PortraitUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png"; sourceTree = "<group>"; };
+		43EAE9B11D04B8FA0022E783 /* testMainViewControllerWithoutAccessibility_iPhone6Plus_LandscapeUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testMainViewControllerWithoutAccessibility_iPhone6Plus_LandscapeUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png"; sourceTree = "<group>"; };
+		43EAE9B21D04B8FA0022E783 /* testMainViewControllerWithoutAccessibility_iPhone6Plus_PortraitUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testMainViewControllerWithoutAccessibility_iPhone6Plus_PortraitUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png"; sourceTree = "<group>"; };
 		8B7801CD5902876C3DDBA637 /* Pods-iOSTestingExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTestingExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSTestingExampleTests/Pods-iOSTestingExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		9C6390241D00CE7600260D99 /* ContentSizeCategoryMocker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentSizeCategoryMocker.h; sourceTree = "<group>"; };
 		9C6390251D00CE7600260D99 /* ContentSizeCategoryMocker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentSizeCategoryMocker.m; sourceTree = "<group>"; };
@@ -127,6 +171,50 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		4316EDAB1D04A9A500DEF70A /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				4316EDAC1D04AAEF00DEF70A /* iOSTestingExampleUnitTests.swift */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		43EAE99C1D04B8FA0022E783 /* ReferenceImages_64 */ = {
+			isa = PBXGroup;
+			children = (
+				43EAE99D1D04B8FA0022E783 /* iOSTestingExampleTests.iOSTestingExampleSnapshotTests */,
+			);
+			path = ReferenceImages_64;
+			sourceTree = "<group>";
+		};
+		43EAE99D1D04B8FA0022E783 /* iOSTestingExampleTests.iOSTestingExampleSnapshotTests */ = {
+			isa = PBXGroup;
+			children = (
+				43EAE99E1D04B8FA0022E783 /* testMainViewController_iPhone9_3_375x667@2x.png */,
+				43EAE99F1D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPad_PortraitUICTContentSizeCategoryM_iPhone9_3_375x667@2x.png */,
+				43EAE9A01D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPad_PortraitUICTContentSizeCategoryXS_iPhone9_3_375x667@2x.png */,
+				43EAE9A11D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPad_PortraitUICTContentSizeCategoryXXXL_iPhone9_3_375x667@2x.png */,
+				43EAE9A21D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone4_PortraitUICTContentSizeCategoryM_iPhone9_3_375x667@2x.png */,
+				43EAE9A31D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone4_PortraitUICTContentSizeCategoryXS_iPhone9_3_375x667@2x.png */,
+				43EAE9A41D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone4_PortraitUICTContentSizeCategoryXXXL_iPhone9_3_375x667@2x.png */,
+				43EAE9A51D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone6_PortraitUICTContentSizeCategoryM_iPhone9_3_375x667@2x.png */,
+				43EAE9A61D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone6_PortraitUICTContentSizeCategoryXS_iPhone9_3_375x667@2x.png */,
+				43EAE9A71D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone6_PortraitUICTContentSizeCategoryXXXL_iPhone9_3_375x667@2x.png */,
+				43EAE9A81D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone6Plus_PortraitUICTContentSizeCategoryM_iPhone9_3_375x667@2x.png */,
+				43EAE9A91D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone6Plus_PortraitUICTContentSizeCategoryXS_iPhone9_3_375x667@2x.png */,
+				43EAE9AA1D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone6Plus_PortraitUICTContentSizeCategoryXXXL_iPhone9_3_375x667@2x.png */,
+				43EAE9AB1D04B8FA0022E783 /* testMainViewControllerWithoutAccessibility_iPad_LandscapeUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png */,
+				43EAE9AC1D04B8FA0022E783 /* testMainViewControllerWithoutAccessibility_iPad_PortraitUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png */,
+				43EAE9AD1D04B8FA0022E783 /* testMainViewControllerWithoutAccessibility_iPhone4_LandscapeUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png */,
+				43EAE9AE1D04B8FA0022E783 /* testMainViewControllerWithoutAccessibility_iPhone4_PortraitUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png */,
+				43EAE9AF1D04B8FA0022E783 /* testMainViewControllerWithoutAccessibility_iPhone6_LandscapeUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png */,
+				43EAE9B01D04B8FA0022E783 /* testMainViewControllerWithoutAccessibility_iPhone6_PortraitUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png */,
+				43EAE9B11D04B8FA0022E783 /* testMainViewControllerWithoutAccessibility_iPhone6Plus_LandscapeUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png */,
+				43EAE9B21D04B8FA0022E783 /* testMainViewControllerWithoutAccessibility_iPhone6Plus_PortraitUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png */,
+			);
+			path = iOSTestingExampleTests.iOSTestingExampleSnapshotTests;
+			sourceTree = "<group>";
+		};
 		4A1DB68ABDEF102FA062534D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				9C7C88A91D00BAC00022B8B2 /* iOSTestingExampleSnapshotTests.swift */,
+				43EAE99C1D04B8FA0022E783 /* ReferenceImages_64 */,
 				9C6390231D00CE7600260D99 /* SnapshotHelper */,
 			);
 			path = SnapshotTests;
@@ -197,6 +286,7 @@
 		9C7C88A81D00BAC00022B8B2 /* iOSTestingExampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				4316EDAB1D04A9A500DEF70A /* UnitTests */,
 				9C6390221D00CE5E00260D99 /* SnapshotTests */,
 				9C7C88AB1D00BAC00022B8B2 /* Info.plist */,
 			);
@@ -368,6 +458,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43EAE9C31D04B8FA0022E783 /* testMainViewControllerWithoutAccessibility_iPhone4_PortraitUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png in Resources */,
+				43EAE9C51D04B8FA0022E783 /* testMainViewControllerWithoutAccessibility_iPhone6_PortraitUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png in Resources */,
+				43EAE9B91D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone4_PortraitUICTContentSizeCategoryXXXL_iPhone9_3_375x667@2x.png in Resources */,
+				43EAE9B31D04B8FA0022E783 /* testMainViewController_iPhone9_3_375x667@2x.png in Resources */,
+				43EAE9BA1D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone6_PortraitUICTContentSizeCategoryM_iPhone9_3_375x667@2x.png in Resources */,
+				43EAE9C21D04B8FA0022E783 /* testMainViewControllerWithoutAccessibility_iPhone4_LandscapeUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png in Resources */,
+				43EAE9C11D04B8FA0022E783 /* testMainViewControllerWithoutAccessibility_iPad_PortraitUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png in Resources */,
+				43EAE9BF1D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone6Plus_PortraitUICTContentSizeCategoryXXXL_iPhone9_3_375x667@2x.png in Resources */,
+				43EAE9BD1D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone6Plus_PortraitUICTContentSizeCategoryM_iPhone9_3_375x667@2x.png in Resources */,
+				43EAE9BE1D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone6Plus_PortraitUICTContentSizeCategoryXS_iPhone9_3_375x667@2x.png in Resources */,
+				43EAE9B81D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone4_PortraitUICTContentSizeCategoryXS_iPhone9_3_375x667@2x.png in Resources */,
+				43EAE9BC1D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone6_PortraitUICTContentSizeCategoryXXXL_iPhone9_3_375x667@2x.png in Resources */,
+				43EAE9B71D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone4_PortraitUICTContentSizeCategoryM_iPhone9_3_375x667@2x.png in Resources */,
+				43EAE9C61D04B8FA0022E783 /* testMainViewControllerWithoutAccessibility_iPhone6Plus_LandscapeUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png in Resources */,
+				43EAE9C01D04B8FA0022E783 /* testMainViewControllerWithoutAccessibility_iPad_LandscapeUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png in Resources */,
+				43EAE9B51D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPad_PortraitUICTContentSizeCategoryXS_iPhone9_3_375x667@2x.png in Resources */,
+				43EAE9B61D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPad_PortraitUICTContentSizeCategoryXXXL_iPhone9_3_375x667@2x.png in Resources */,
+				43EAE9BB1D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPhone6_PortraitUICTContentSizeCategoryXS_iPhone9_3_375x667@2x.png in Resources */,
+				43EAE9B41D04B8FA0022E783 /* testMainViewControllerWithAccessibility_iPad_PortraitUICTContentSizeCategoryM_iPhone9_3_375x667@2x.png in Resources */,
+				43EAE9C41D04B8FA0022E783 /* testMainViewControllerWithoutAccessibility_iPhone6_LandscapeUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png in Resources */,
+				43EAE9C71D04B8FA0022E783 /* testMainViewControllerWithoutAccessibility_iPhone6Plus_PortraitUICTContentSizeCategoryL_iPhone9_3_375x667@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,6 +652,7 @@
 			files = (
 				9C7C88AA1D00BAC00022B8B2 /* iOSTestingExampleSnapshotTests.swift in Sources */,
 				9C6390291D00CE7600260D99 /* SnapshotTestsHelper.swift in Sources */,
+				4316EDAD1D04AAEF00DEF70A /* iOSTestingExampleUnitTests.swift in Sources */,
 				9C6390281D00CE7600260D99 /* ContentSizeCategoryMocker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

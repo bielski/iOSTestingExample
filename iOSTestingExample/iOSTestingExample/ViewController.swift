@@ -23,6 +23,6 @@ class ViewController: UIViewController {
 
     @IBAction func sendButtonTapped(sender: AnyObject) {
         self.answearTextField.text = ""
-        self.answearTextField .resignFirstResponder()
+        self.answearTextField.resignFirstResponder()
     }
 }
