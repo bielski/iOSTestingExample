@@ -13,6 +13,7 @@ import FBSnapshotTestCase
 class iOSTestingExampleSnapshotTests: FBSnapshotTestCase {
     
     // MARK: Setup
+    
     override func setUp() {
         super.setUp()
         self.recordMode = false
@@ -24,6 +25,7 @@ class iOSTestingExampleSnapshotTests: FBSnapshotTestCase {
     }
 
     // MARK: Simple test of main view controller
+    
     func testMainViewController() {
         let view = mainView()
 
@@ -32,6 +34,7 @@ class iOSTestingExampleSnapshotTests: FBSnapshotTestCase {
 
     // MARK: Test uses performTestViewOnFourPlatformsWithoutAccessibilityInPortraitAndLandscapeWithView function
     // to test view on four devices in both orientations (but without different font sizes)
+    
     func testMainViewControllerWithoutAccessibility() {
         let view = mainView()
     performTestViewOnFourPlatformsWithoutAccessibilityInPortraitAndLandscapeWithView(view, height: Double(iPhone5Height))
@@ -39,6 +42,7 @@ class iOSTestingExampleSnapshotTests: FBSnapshotTestCase {
     
     // MARK: Test uses performTestViewOnFourPlatformsWithAccessibilityWithView function
     // to test view on four devices in portrait orientation (with different font sizes)
+    
     func testMainViewControllerWithAccessibility() {
         let view = mainView()
 
@@ -46,6 +50,7 @@ class iOSTestingExampleSnapshotTests: FBSnapshotTestCase {
     }
     
     // MARK: Helper
+    
     private func mainView() -> UIView {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let initialViewController = storyboard.instantiateInitialViewController()
