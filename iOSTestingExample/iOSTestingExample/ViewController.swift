@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  iOSTestingExample
 //
-//  Created by ewa on 02.06.2016.
+//  Created by Ewa Bielska on 02.06.2016.
 //  Copyright © 2016 Ewa Bielska. All rights reserved.
 //
 
