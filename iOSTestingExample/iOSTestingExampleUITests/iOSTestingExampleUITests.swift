@@ -17,6 +17,7 @@ class iOSTestingExampleUITests: XCTestCase {
         super.setUp()
         continueAfterFailure = false
         XCUIApplication().launch()
+        XCUIDevice.sharedDevice().orientation = .Portrait
     }
     
     override func tearDown() {
@@ -32,16 +33,18 @@ class iOSTestingExampleUITests: XCTestCase {
         XCTAssertTrue(app.textFields["answearTextField"].exists)
         XCTAssertTrue(app.buttons["sendButton"].exists)
     }
-
-    func testAfterEnteringAnswearAndTappingButtonSendTextFieldShouldBeEmpty() {
-
-        // Tap text field and enter text
+    
+    func testAfterEnteringAnswearAndTappingButtonSendAnswearTextFieldShouldBeEmpty() {
         
+        // Tap text field and enter text
+        let app = XCUIApplication()
+        app.textFields["answearTextField"].tap()
+        app.textFields["answearTextField"].typeText(testAnswear)
         
         // Tap send button
-        
+        app.buttons["sendButton"].tap()
 
         // Assert if text field accessibilityValue is nil
-        
+        XCTAssertTrue(app.textFields["answearTextField"].label == "")
     }
 }

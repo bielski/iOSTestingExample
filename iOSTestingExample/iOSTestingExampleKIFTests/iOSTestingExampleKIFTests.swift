@@ -34,7 +34,7 @@ class iOSTestingExampleKIFTests: KIFTestCase {
         viewTester.usingIdentifier("sendButton").waitToBecomeTappable()
     }
 
-    func testAfterEnteringAnswearAndTappingButtonSendTextFieldShouldBeEmpty() {
+    func testAfterEnteringAnswearAndTappingButtonSendAnswearTextFieldShouldBeEmpty() {
         
         // Enter text into text field
         viewTester.usingIdentifier("answearTextField").enterText(testAnswear, expectedResult: testAnswear)

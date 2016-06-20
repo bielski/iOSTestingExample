@@ -14,5 +14,6 @@ To run test follow the instructions:
 - first run `pod install` in iOSTestingExample folder
 - to run snaphost test use iPhone 6S simulator
 - in your simulator settings switch off auto-correction (Seetings>General>Auto-Correction), it will protect you from false negative test results
+- to execute entire test suite, go to Xcode Product > Test or use command+U shortcut
 - use Xcode Test Navigator to run UI or snapshot tests separately
 
