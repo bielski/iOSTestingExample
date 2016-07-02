@@ -38,13 +38,22 @@ class iOSTestingExampleUITests: XCTestCase {
         
         // Tap text field and enter text
         let app = XCUIApplication()
-        app.textFields["answearTextField"].tap()
-        app.textFields["answearTextField"].typeText(testAnswear)
+        self.waitForElement(app.textFields["answearTextField"])
+        self.waitForElement(app.textFields["answearTextField"])
         
         // Tap send button
         app.buttons["sendButton"].tap()
 
-        // Assert if text field accessibilityValue is nil
+        // Assert if text field accessibilityValue is empty
         XCTAssertTrue(app.textFields["answearTextField"].label == "")
+    }
+
+    //MARK: Helper method
+
+    private func waitForElement(element: XCUIElement) {
+
+        let exists = NSPredicate(format: "exists == true")
+        expectationForPredicate(exists, evaluatedWithObject: element, handler: nil)
+        waitForExpectationsWithTimeout(5, handler: nil)
     }
 }
