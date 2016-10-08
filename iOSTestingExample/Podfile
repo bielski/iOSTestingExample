@@ -5,7 +5,7 @@ target 'iOSTestingExample' do
 end
 
 target 'iOSTestingExampleTests' do
-    pod 'FBSnapshotTestCase'
+    pod 'FBSnapshotTestCase', '~> 2.1.4'
     pod 'SnapKit'
     pod 'OCMock'
 end
@@ -15,4 +15,12 @@ end
 
 target 'iOSTestingExampleKIFTests' do
     pod 'KIF', :configurations => ['Debug']
+end
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['SWIFT_VERSION'] = '3.0'
+        end
+    end
 end
