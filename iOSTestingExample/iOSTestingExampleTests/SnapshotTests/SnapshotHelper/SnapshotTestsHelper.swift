@@ -12,15 +12,15 @@ struct TestCondition {
     let sizeCategories: [String]
 }
 
-let sizeCategoriesNames = [UIContentSizeCategoryExtraSmall,
-    UIContentSizeCategoryMedium,
-    UIContentSizeCategoryExtraExtraExtraLarge]
+let sizeCategoriesNames = [UIContentSizeCategory.extraSmall,
+    UIContentSizeCategory.medium,
+    UIContentSizeCategory.extraExtraExtraLarge]
 
-let defaultSizeCategoryName = [UIContentSizeCategoryLarge]
+let defaultSizeCategoryName = [UIContentSizeCategory.large]
 
 extension FBSnapshotTestCase {
 
-    func embedViewForTest(viewToEmbed: UIView) -> UIView {
+    func embedViewForTest(_ viewToEmbed: UIView) -> UIView {
         viewToEmbed.translatesAutoresizingMaskIntoConstraints = false
         let containerView = UIView.init(frame: CGRectZero)
         containerView.addSubview(viewToEmbed)
@@ -35,8 +35,8 @@ extension FBSnapshotTestCase {
 
     // Executes snapshot tests on iPhone 4, 6, 6 Plus and iPad in portrait orientation
     // Takes different font sizes into account
-    func performTestViewOnFourPlatformsWithAccessibilityWithView (view: UIView, height: Double) {
-        let conditions = [TestCondition(size: iPhone4PortraitSize, name: "iPhone4-Portrait", sizeCategories: sizeCategoriesNames),
+    func performTestViewOnFourPlatformsWithAccessibilityWithView (_ view: UIView, height: Double) {
+        let conditions = [TestCondition(size: iPhone4PortraitSize, name: "iPhone4-Portrait", sizeCategories: sizeCategoriesNames as! [String]),
                           TestCondition(size: iPhone6PortraitSize, name: "iPhone6-Portrait", sizeCategories: sizeCategoriesNames),
                           TestCondition(size: iPhone6PlusPortraitSize, name: "iPhone6Plus-Portrait", sizeCategories: sizeCategoriesNames),
                           TestCondition(size: iPadPortraitSize, name: "iPad-Portrait", sizeCategories: sizeCategoriesNames)]
@@ -45,8 +45,8 @@ extension FBSnapshotTestCase {
 
     // Executes snapshot tests on iPhone 4, 6, 6 Plus and iPad in both orientations
     // Does not take different font sizes into account
-    func performTestViewOnFourPlatformsWithoutAccessibilityInPortraitAndLandscapeWithView (view: UIView, height: Double) {
-        let conditions = [TestCondition(size: iPhone4PortraitSize, name: "iPhone4-Portrait", sizeCategories: defaultSizeCategoryName),
+    func performTestViewOnFourPlatformsWithoutAccessibilityInPortraitAndLandscapeWithView (_ view: UIView, height: Double) {
+        let conditions = [TestCondition(size: iPhone4PortraitSize, name: "iPhone4-Portrait", sizeCategories: defaultSizeCategoryName as! [String]),
             TestCondition(size: iPhone6PortraitSize, name: "iPhone6-Portrait", sizeCategories: defaultSizeCategoryName),
             TestCondition(size: iPhone6PlusPortraitSize, name: "iPhone6Plus-Portrait", sizeCategories: defaultSizeCategoryName),
             TestCondition(size: iPadPortraitSize, name: "iPad-Portrait", sizeCategories: defaultSizeCategoryName),
@@ -57,13 +57,13 @@ extension FBSnapshotTestCase {
         self.performTestsWithConditions(view, height: height, conditions: conditions)
     }
 
-    func performTestsWithConditions(view: UIView, height: Double, conditions: [TestCondition]) {
+    func performTestsWithConditions(_ view: UIView, height: Double, conditions: [TestCondition]) {
         for condition in conditions {
             self.performTestsWithCondition(view, height:height,  condition:condition)
         }
     }
 
-    func performTestsWithCondition(view: UIView, height: Double, condition: TestCondition) {
+    func performTestsWithCondition(_ view: UIView, height: Double, condition: TestCondition) {
         for sizeCategory in condition.sizeCategories {
             view.bounds = CGRect(x: 0.0, y: 0.0, width: condition.size.width, height: CGFloat(height))
             view.layoutIfNeeded()
@@ -73,7 +73,7 @@ extension FBSnapshotTestCase {
         }
     }
 
-    func performTestsWithSize(view: UIView, size: CGSize) {
+    func performTestsWithSize(_ view: UIView, size: CGSize) {
             view.bounds = CGRect(x: 0.0, y: 0.0, width: size.width, height: size.height)
             view.layoutIfNeeded()
             FBSnapshotVerifyView(view)

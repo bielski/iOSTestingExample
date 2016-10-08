@@ -34,6 +34,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-iOSTestingExampleUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SnapKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,12 +52,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>34B0F55D69A938117700AFBD9BFF8F93</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5AE90BC48AA9D1811242381AE4627D94</key>
+		<key>3350AB3049A9F999D0F59C50AA6CA276</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,17 +62,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>964D06EDA02662684045DAD0A97680CA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>C4B626F99CE43C4E7F967B3DA5EE188F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F7B6A00999DFA399143180655E38591C</key>
+		<key>E5A0E19B95FFE657535260EADC8DA7FE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FF6A8A7FBCC051C1E5D277191DA689C8</key>
+		<key>EF5A6D7E0F262D54524FA67262884C8D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FD20CDCCEEA6AB0CD92648126225465B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -17,7 +17,7 @@ class iOSTestingExampleUITests: XCTestCase {
         super.setUp()
         continueAfterFailure = false
         XCUIApplication().launch()
-        XCUIDevice.sharedDevice().orientation = .Portrait
+        XCUIDevice.shared().orientation = .portrait
     }
     
     override func tearDown() {
@@ -50,10 +50,10 @@ class iOSTestingExampleUITests: XCTestCase {
 
     //MARK: Helper method
 
-    private func waitForElement(element: XCUIElement) {
+    fileprivate func waitForElement(_ element: XCUIElement) {
 
         let exists = NSPredicate(format: "exists == true")
-        expectationForPredicate(exists, evaluatedWithObject: element, handler: nil)
-        waitForExpectationsWithTimeout(5, handler: nil)
+        expectation(for: exists, evaluatedWith: element, handler: nil)
+        waitForExpectations(timeout: 5, handler: nil)
     }
 }

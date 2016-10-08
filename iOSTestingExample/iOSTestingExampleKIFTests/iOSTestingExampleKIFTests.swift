@@ -17,7 +17,7 @@ extension XCTestCase {
     
     var viewTester: KIFUIViewTestActor { return viewTester() }
     
-    private func viewTester(file : String = #file, _ line : Int = #line) -> KIFUIViewTestActor {
+    fileprivate func viewTester(_ file : String = #file, _ line : Int = #line) -> KIFUIViewTestActor {
         return KIFUIViewTestActor(inFile: file, atLine: line, delegate: self)
     }
 }

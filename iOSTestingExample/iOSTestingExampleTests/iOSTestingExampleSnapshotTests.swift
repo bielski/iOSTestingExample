@@ -51,7 +51,7 @@ class iOSTestingExampleSnapshotTests: FBSnapshotTestCase {
     
     // MARK: Helper
     
-    private func mainView() -> UIView {
+    fileprivate func mainView() -> UIView {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let initialViewController = storyboard.instantiateInitialViewController()
         

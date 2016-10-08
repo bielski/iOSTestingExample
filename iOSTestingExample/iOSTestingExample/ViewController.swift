@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
 
-    @IBAction func sendButtonTapped(sender: AnyObject) {
+    @IBAction func sendButtonTapped(_ sender: AnyObject) {
         self.answearTextField.text = ""
         self.answearTextField.resignFirstResponder()
     }
