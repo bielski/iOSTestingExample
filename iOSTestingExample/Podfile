@@ -14,7 +14,7 @@ target 'iOSTestingExampleUITests' do
 end
 
 target 'iOSTestingExampleKIFTests' do
-    pod 'KIF', :configurations => ['Debug']
+    pod 'KIF', '~> 3.5.1', :configurations => ['Debug']
 end
 
 post_install do |installer|
