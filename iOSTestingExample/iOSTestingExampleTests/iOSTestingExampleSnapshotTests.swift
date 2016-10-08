@@ -17,14 +17,15 @@ class iOSTestingExampleSnapshotTests: FBSnapshotTestCase {
     override func setUp() {
         super.setUp()
         self.recordMode = false
-        self.deviceAgnostic = true
+        self.isDeviceAgnostic = true
     }
     
     override func tearDown() {
         super.tearDown()
     }
 
-    // MARK: Simple test of main view controller
+    // MARK: Test uses FBSnapshotVerifyView function
+    // available within FBSnapshotTestCase pod to test the view
     
     func testMainViewController() {
         let view = mainView()
@@ -32,21 +33,20 @@ class iOSTestingExampleSnapshotTests: FBSnapshotTestCase {
         FBSnapshotVerifyView(view)
     }
 
-    // MARK: Test uses performTestViewOnFourPlatformsWithoutAccessibilityInPortraitAndLandscapeWithView function
-    // to test view on four devices in both orientations (but without different font sizes)
+    // MARK: Test uses snapshotTestOnFourPlatforms function
+    // to test view on four devices in both orientations and changing system font size
     
     func testMainViewControllerWithoutAccessibility() {
         let view = mainView()
-    performTestViewOnFourPlatformsWithoutAccessibilityInPortraitAndLandscapeWithView(view, height: Double(iPhone5Height))
+        snapshotTestOnFourPlatforms(view: view, height: iPhone5Height, withAccessibility: true, inBothOrientations: true)
     }
     
-    // MARK: Test uses performTestViewOnFourPlatformsWithAccessibilityWithView function
-    // to test view on four devices in portrait orientation (with different font sizes)
+    // MARK: Test uses snapshotTestOnFourPlatforms function
+    // to test view on four devices in one orientation and one font size
     
     func testMainViewControllerWithAccessibility() {
         let view = mainView()
-
-        performTestViewOnFourPlatformsWithAccessibilityWithView(view, height: Double(iPhone5Height))
+        snapshotTestOnFourPlatforms(view: view, height: iPhone5Height)
     }
     
     // MARK: Helper

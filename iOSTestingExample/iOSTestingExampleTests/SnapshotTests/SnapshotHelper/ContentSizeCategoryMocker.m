@@ -10,7 +10,7 @@
 
 static id applicationMock = nil;
 
-+ (void)mockContenSizeCategory:(NSString *)contentSizeCategory {
++ (void)mockContentSizeCategory:(NSString *)contentSizeCategory {
     applicationMock = OCMPartialMock([UIApplication sharedApplication]);
     OCMStub([applicationMock preferredContentSizeCategory]).andReturn(contentSizeCategory);
     [[NSNotificationCenter defaultCenter] postNotificationName:UIContentSizeCategoryDidChangeNotification

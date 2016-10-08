@@ -8,20 +8,20 @@ PODS:
     - KIF/Core (= 3.4.2)
   - KIF/Core (3.4.2)
   - OCMock (3.3)
-  - SnapKit (0.21.0)
+  - SnapKit (3.0.2)
 
 DEPENDENCIES:
   - FBSnapshotTestCase (~> 2.1.4)
   - KIF
   - OCMock
-  - SnapKit
+  - SnapKit (~> 3.0.2)
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   KIF: b518c9831453abea5afdbbde3908ec47832d6d56
   OCMock: d68685bde31f69cb61d518dcb39269080c78b5ed
-  SnapKit: 2756fe24b706367af224c9c508d2f9166d03354c
+  SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
 
-PODFILE CHECKSUM: a555d83c1b5b1c90c5b60a4f691e86bfeae70ecb
+PODFILE CHECKSUM: bbd922c54d1b82b5aee46f510b2e9eaf864b8a5e
 
 COCOAPODS: 1.0.1

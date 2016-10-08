@@ -33,7 +33,7 @@ static CGSize iPadLandscapeSize = (CGSize){iPadHeight, iPadWidth};
 
 @interface ContentSizeCategoryMocker : NSObject
 
-+ (void)mockContenSizeCategory:(nonnull NSString *)contentSizeCategory;
++ (void)mockContentSizeCategory:(nonnull NSString *)contentSizeCategory;
 + (void)stopMocking;
 
 @end

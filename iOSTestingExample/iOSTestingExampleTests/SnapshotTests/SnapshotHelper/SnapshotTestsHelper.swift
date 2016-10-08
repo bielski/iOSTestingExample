@@ -5,26 +5,24 @@
 
 import FBSnapshotTestCase
 import SnapKit
+import iOSTestingExample
 
 struct TestCondition {
     let size: CGSize
     let name: String
-    let sizeCategories: [String]
+    let sizeCategories: [UIContentSizeCategory]
 }
 
-let sizeCategoriesNames = [UIContentSizeCategory.extraSmall,
-    UIContentSizeCategory.medium,
-    UIContentSizeCategory.extraExtraExtraLarge]
-
-let defaultSizeCategoryName = [UIContentSizeCategory.large]
+let sizeCategoriesForTestingWithAccessibility: [UIContentSizeCategory] = [.extraSmall, .medium, .extraExtraExtraLarge]
+let defaultSizeCategory = UIContentSizeCategory.large
 
 extension FBSnapshotTestCase {
 
-    func embedViewForTest(_ viewToEmbed: UIView) -> UIView {
+    func embedViewForTest(viewToEmbed: UIView) -> UIView {
         viewToEmbed.translatesAutoresizingMaskIntoConstraints = false
-        let containerView = UIView.init(frame: CGRectZero)
+        let containerView = UIView.init(frame: CGRect.zero)
         containerView.addSubview(viewToEmbed)
-        viewToEmbed.snp_makeConstraints { (make) -> Void in
+        viewToEmbed.snp.makeConstraints { (make) -> Void in
             make.width.equalTo(containerView)
             make.top.equalTo(containerView)
             make.centerX.equalTo(containerView)
@@ -33,49 +31,43 @@ extension FBSnapshotTestCase {
         return containerView
     }
 
-    // Executes snapshot tests on iPhone 4, 6, 6 Plus and iPad in portrait orientation
-    // Takes different font sizes into account
-    func performTestViewOnFourPlatformsWithAccessibilityWithView (_ view: UIView, height: Double) {
-        let conditions = [TestCondition(size: iPhone4PortraitSize, name: "iPhone4-Portrait", sizeCategories: sizeCategoriesNames as! [String]),
-                          TestCondition(size: iPhone6PortraitSize, name: "iPhone6-Portrait", sizeCategories: sizeCategoriesNames),
-                          TestCondition(size: iPhone6PlusPortraitSize, name: "iPhone6Plus-Portrait", sizeCategories: sizeCategoriesNames),
-                          TestCondition(size: iPadPortraitSize, name: "iPad-Portrait", sizeCategories: sizeCategoriesNames)]
-        self.performTestsWithConditions(view, height: height, conditions: conditions)
+    func snapshotTest(view: UIView, size: CGSize) {
+        view.bounds = CGRect(x: 0.0, y: 0.0, width: size.width, height: size.height)
+        view.layoutIfNeeded()
+        FBSnapshotVerifyView(view)
     }
 
-    // Executes snapshot tests on iPhone 4, 6, 6 Plus and iPad in both orientations
-    // Does not take different font sizes into account
-    func performTestViewOnFourPlatformsWithoutAccessibilityInPortraitAndLandscapeWithView (_ view: UIView, height: Double) {
-        let conditions = [TestCondition(size: iPhone4PortraitSize, name: "iPhone4-Portrait", sizeCategories: defaultSizeCategoryName as! [String]),
-            TestCondition(size: iPhone6PortraitSize, name: "iPhone6-Portrait", sizeCategories: defaultSizeCategoryName),
-            TestCondition(size: iPhone6PlusPortraitSize, name: "iPhone6Plus-Portrait", sizeCategories: defaultSizeCategoryName),
-            TestCondition(size: iPadPortraitSize, name: "iPad-Portrait", sizeCategories: defaultSizeCategoryName),
-            TestCondition(size: iPhone4LandscapeSize, name: "iPhone4-Landscape", sizeCategories: defaultSizeCategoryName),
-            TestCondition(size: iPhone6LandscapeSize, name: "iPhone6-Landscape", sizeCategories: defaultSizeCategoryName),
-            TestCondition(size: iPhone6PlusLandscapeSize, name: "iPhone6Plus-Landscape", sizeCategories: defaultSizeCategoryName),
-        TestCondition(size: iPadLandscapeSize, name: "iPad-Landscape", sizeCategories: defaultSizeCategoryName)]
-        self.performTestsWithConditions(view, height: height, conditions: conditions)
+    func snapshotTestOnFourPlatforms(view: UIView, height: CGFloat, withAccessibility: Bool = false, inBothOrientations: Bool = false) {
+        let sizeCategories = withAccessibility ? sizeCategoriesForTestingWithAccessibility : [ defaultSizeCategory ]
+        var conditions = [TestCondition(size: iPhone4PortraitSize, name: "iPhone4-Portrait", sizeCategories: sizeCategories),
+                          TestCondition(size: iPhone6PortraitSize, name: "iPhone6-Portrait", sizeCategories: sizeCategories),
+                          TestCondition(size: iPhone6PlusPortraitSize, name: "iPhone6Plus-Portrait", sizeCategories: sizeCategories),
+                          TestCondition(size: iPadPortraitSize, name: "iPad-Portrait", sizeCategories: sizeCategories)]
+        if inBothOrientations {
+            let additionalConditions = [TestCondition(size: iPhone4LandscapeSize, name: "iPhone4-Landscape", sizeCategories: sizeCategories),
+                                        TestCondition(size: iPhone6LandscapeSize, name: "iPhone6-Landscape", sizeCategories: sizeCategories),
+                                        TestCondition(size: iPhone6PlusLandscapeSize, name: "iPhone6Plus-Landscape", sizeCategories: sizeCategories),
+                                        TestCondition(size: iPadLandscapeSize, name: "iPad-Landscape", sizeCategories: sizeCategories)]
+            conditions.append(contentsOf: additionalConditions)
+        }
+        self.snapshotTest(view: view, height: height, conditions: conditions)
     }
 
-    func performTestsWithConditions(_ view: UIView, height: Double, conditions: [TestCondition]) {
+    // Private functions
+
+    func snapshotTest(view: UIView, height: CGFloat, conditions: [TestCondition]) {
         for condition in conditions {
-            self.performTestsWithCondition(view, height:height,  condition:condition)
+            self.snapshotTest(view: view, height: height, condition: condition)
         }
     }
 
-    func performTestsWithCondition(_ view: UIView, height: Double, condition: TestCondition) {
+    func snapshotTest(view: UIView, height: CGFloat, condition: TestCondition) {
         for sizeCategory in condition.sizeCategories {
-            view.bounds = CGRect(x: 0.0, y: 0.0, width: condition.size.width, height: CGFloat(height))
+            view.bounds = CGRect(x: 0.0, y: 0.0, width: condition.size.width, height: height)
             view.layoutIfNeeded()
-            ContentSizeCategoryMocker.mockContenSizeCategory(sizeCategory)
-            FBSnapshotVerifyView(view, identifier: condition.name + sizeCategory)
+            ContentSizeCategoryMocker.mockContentSizeCategory(sizeCategory.rawValue)
+            FBSnapshotVerifyView(view, identifier: condition.name + sizeCategory.rawValue)
             ContentSizeCategoryMocker.stopMocking()
         }
-    }
-
-    func performTestsWithSize(_ view: UIView, size: CGSize) {
-            view.bounds = CGRect(x: 0.0, y: 0.0, width: size.width, height: size.height)
-            view.layoutIfNeeded()
-            FBSnapshotVerifyView(view)
     }
 }
