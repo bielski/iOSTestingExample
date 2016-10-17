@@ -5,3 +5,4 @@ clean true
 
 output_types "html"
 open_report true
+code_coverage true
