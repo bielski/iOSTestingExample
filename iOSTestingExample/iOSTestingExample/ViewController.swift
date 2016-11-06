@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet var answearTextField: UITextField!
+    @IBOutlet var answerTextField: UITextField!
     @IBOutlet var sendButton: UIButton!
     
     override func viewDidLoad() {
@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func sendButtonTapped(_ sender: AnyObject) {
-        self.answearTextField.text = ""
-        self.answearTextField.resignFirstResponder()
+        self.answerTextField.text = ""
+        self.answerTextField.resignFirstResponder()
     }
 }

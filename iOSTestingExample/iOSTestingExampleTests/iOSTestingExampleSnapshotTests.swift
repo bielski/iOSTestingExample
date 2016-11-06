@@ -55,6 +55,6 @@ class iOSTestingExampleSnapshotTests: FBSnapshotTestCase {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let initialViewController = storyboard.instantiateInitialViewController()
         
-        return initialViewController!.view;
+        return initialViewController!.view
     }
 }
