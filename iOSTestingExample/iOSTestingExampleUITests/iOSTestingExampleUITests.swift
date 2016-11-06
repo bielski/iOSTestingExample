@@ -45,7 +45,7 @@ class iOSTestingExampleUITests: XCTestCase {
         app.buttons["sendButton"].tap()
 
         // Assert if text field accessibilityValue is empty
-        XCTAssertTrue(app.textFields["answearTextField"].label == "")
+        XCTAssertTrue(app.textFields["answearTextField"].label.isEmpty)
     }
 
     //MARK: Helper method

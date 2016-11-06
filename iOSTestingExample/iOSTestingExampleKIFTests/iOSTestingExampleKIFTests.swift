@@ -34,7 +34,7 @@ class iOSTestingExampleKIFTests: KIFTestCase {
         viewTester.usingIdentifier("sendButton").waitToBecomeTappable()
     }
 
-    func testAfterEnteringAnswearAndTappingButtonSendAnswearTextFieldShouldBeEmpty() {
+    func testAfterEnteringAnswerAndTappingButtonSendAnswerTextFieldShouldBeEmpty() {
         
         // Enter text into text field
         viewTester.usingIdentifier("answearTextField").enterText(testAnswear, expectedResult: testAnswear)
@@ -44,6 +44,6 @@ class iOSTestingExampleKIFTests: KIFTestCase {
 
         // Assert if text field accessibilityValue is nil
         XCTAssertNil(viewTester.usingIdentifier("answearTextField").accessibilityValue)
-        XCTAssert((viewTester.usingIdentifier("answearTextField").waitForView() as! UITextField).text == "")
+        XCTAssertTrue((viewTester.usingIdentifier("answearTextField").waitForView() as! UITextField).text!.isEmpty)
     }
 }
