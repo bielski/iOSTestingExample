@@ -2,20 +2,24 @@ fastlane_version "1.105.2"
 default_platform :ios
 
 platform :ios do
-  
+
   desc "Runs unit and UI tests"
   lane :test do
 
   scan(
     workspace: "iOSTestingExample.xcworkspace",
-    devices: ["iPhone 6s"] 
+    devices: ["iPhone 6s"],
+    code_coverage: true,
   )
 
-  xcov(
+  slather(
+    source_directory: "..",
+    proj: 'iOSTestingExample.xcodeproj',
     workspace: "iOSTestingExample.xcworkspace",
-    scheme: "iOSTestingExample",
-    output_directory: "fastlane/xcov_output" 
+    scheme: 'iOSTestingExample',
+    html: true,
+    use_bundle_exec: true
   )
   end
-  
+
 end
