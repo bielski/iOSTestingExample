@@ -36,7 +36,7 @@ class iOSTestingExampleSnapshotTests: FBSnapshotTestCase {
     // MARK: Test uses snapshotTestOnFourPlatforms function
     // to test view on four devices in both orientations and changing system font size
     
-    func testMainViewControllerWithoutAccessibility() {
+    func testMainViewControllerWithAccessibility() {
         let view = mainView()
         snapshotTestOnFourPlatforms(view: view, height: iPhone5Height, withAccessibility: true, inBothOrientations: true)
     }
@@ -44,17 +44,28 @@ class iOSTestingExampleSnapshotTests: FBSnapshotTestCase {
     // MARK: Test uses snapshotTestOnFourPlatforms function
     // to test view on four devices in one orientation and one font size
     
-    func testMainViewControllerWithAccessibility() {
+    func testMainViewControllerWithoutAccessibility() {
         let view = mainView()
         snapshotTestOnFourPlatforms(view: view, height: iPhone5Height)
     }
+
+    func testAnswerLabelWithoutAccessibility() {
+        let vc = viewController()
+        _ = vc.view
+        let view = vc.answerTextField!
+        view.text = "test answer"
+        snapshotTestOnFourPlatforms(view: view, height: view.frame.size.height)
+    }
     
     // MARK: Helper
-    
-    fileprivate func mainView() -> UIView {
+    fileprivate func viewController() -> ViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let initialViewController = storyboard.instantiateInitialViewController()
+        return storyboard.instantiateInitialViewController() as! ViewController
+    }
+
+
+    fileprivate func mainView() -> UIView {
         
-        return initialViewController!.view
+        return viewController().view
     }
 }
