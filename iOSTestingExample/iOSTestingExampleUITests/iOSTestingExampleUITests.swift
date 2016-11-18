@@ -15,39 +15,47 @@ class iOSTestingExampleUITests: XCTestCase {
 
     override func setUp() {
         super.setUp()
+
+        app.launch()
         continueAfterFailure = false
-        XCUIApplication().launch()
         XCUIDevice.shared().orientation = .portrait
     }
     
     override func tearDown() {
         super.tearDown()
     }
-    
+
+
     //MARK: Tests
     
-    func testMainViewControllerLayout() {
-
-        // Wait for layout components
-        XCTAssertTrue(app.staticTexts["questionLabel"].exists)
+    func testEnterAnswearAndTapButtonSendAnswear() {
+        
+        // Check if elements exist
         XCTAssertTrue(app.textFields["answearTextField"].exists)
         XCTAssertTrue(app.buttons["sendButton"].exists)
+
+        // Enter answear and tap send button
+        app.textFields["answearTextField"].tap()
+        app.textFields["answearTextField"].typeText(testAnswear)
+        app.buttons["sendButton"].tap()
     }
-    
+
     func testAfterEnteringAnswearAndTappingButtonSendAnswearTextFieldShouldBeEmpty() {
-        
-        // Tap text field and enter text
-        let app = XCUIApplication()
+
+        // Wait for elements
         self.waitForElement(app.textFields["answearTextField"])
         self.waitForElement(app.textFields["answearTextField"])
-        
-        // Tap send button
+
+        // Enter answear and tap send button
+        app.textFields["answearTextField"].tap()
+        app.textFields["answearTextField"].typeText(testAnswear)
         app.buttons["sendButton"].tap()
 
-        // Assert if text field accessibilityValue is empty
-        XCTAssertTrue(app.textFields["answearTextField"].label.isEmpty)
+        // Assert if text field is empty
+        XCTAssertNil(app.textFields["answearTextField"].accessibilityValue)
     }
 
+    
     //MARK: Helper method
 
     fileprivate func waitForElement(_ element: XCUIElement) {
