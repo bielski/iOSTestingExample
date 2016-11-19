@@ -1,8 +1,0 @@
-scheme "iOSTestingExample"
-device "iPhone 6s"
-
-clean true
-
-output_types "html"
-open_report true
-code_coverage true
