@@ -17,7 +17,6 @@ class iOSTestingExampleSnapshotTests: FBSnapshotTestCase {
     override func setUp() {
         super.setUp()
         self.recordMode = false
-        self.isDeviceAgnostic = true
     }
     
     override func tearDown() {
@@ -32,40 +31,5 @@ class iOSTestingExampleSnapshotTests: FBSnapshotTestCase {
 
         FBSnapshotVerifyView(view)
     }
-
-    // MARK: Test uses snapshotTestOnFourPlatforms function
-    // to test view on four devices in both orientations and changing system font size
     
-    func testMainViewControllerWithAccessibility() {
-        let view = mainView()
-        snapshotTestOnFourPlatforms(view: view, height: iPhone5Height, withAccessibility: true, inBothOrientations: true)
-    }
-    
-    // MARK: Test uses snapshotTestOnFourPlatforms function
-    // to test view on four devices in one orientation and one font size
-    
-    func testMainViewControllerWithoutAccessibility() {
-        let view = mainView()
-        snapshotTestOnFourPlatforms(view: view, height: iPhone5Height)
-    }
-
-    func testAnswerLabelWithoutAccessibility() {
-        let vc = viewController()
-        _ = vc.view
-        let view = vc.answerTextField!
-        view.text = "test answer"
-        snapshotTestOnFourPlatforms(view: view, height: view.frame.size.height)
-    }
-    
-    // MARK: Helper
-    fileprivate func viewController() -> ViewController {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        return storyboard.instantiateInitialViewController() as! ViewController
-    }
-
-
-    fileprivate func mainView() -> UIView {
-        
-        return viewController().view
-    }
 }
