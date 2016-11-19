@@ -6,11 +6,7 @@ platform :ios do
   desc "Runs unit and UI tests"
   lane :test do
 
-  scan(
-    workspace: "iOSTestingExample.xcworkspace",
-    devices: ["iPhone 6s"],
-    code_coverage: true,
-  )
+  scan
 
   slather(
     source_directory: "..",
