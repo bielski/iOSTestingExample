@@ -17,10 +17,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-
     @IBAction func sendButtonTapped(_ sender: AnyObject) {
         self.answerTextField.text = ""
         self.answerTextField.resignFirstResponder()
