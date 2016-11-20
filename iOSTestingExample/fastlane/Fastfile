@@ -9,12 +9,13 @@ platform :ios do
   scan
 
   slather(
-    source_directory: "..",
+    source_directory: '..',
     proj: 'iOSTestingExample.xcodeproj',
     workspace: "iOSTestingExample.xcworkspace",
     scheme: 'iOSTestingExample',
     html: true,
-    use_bundle_exec: true
+    use_bundle_exec: true,
+    show: true
   )
   end
 
