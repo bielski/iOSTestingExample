@@ -16,7 +16,6 @@
 		9C7C889A1D00BAC00022B8B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C7C88981D00BAC00022B8B2 /* Main.storyboard */; };
 		9C7C889C1D00BAC00022B8B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C7C889B1D00BAC00022B8B2 /* Assets.xcassets */; };
 		9C7C889F1D00BAC00022B8B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C7C889D1D00BAC00022B8B2 /* LaunchScreen.storyboard */; };
-		9C7C88AA1D00BAC00022B8B2 /* iOSTestingExampleSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C88A91D00BAC00022B8B2 /* iOSTestingExampleSnapshotTests.swift */; };
 		9C7C88B51D00BAC00022B8B2 /* iOSTestingExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C88B41D00BAC00022B8B2 /* iOSTestingExampleUITests.swift */; };
 		9C7C88C91D00BE060022B8B2 /* iOSTestingExampleKIFTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C88C81D00BE060022B8B2 /* iOSTestingExampleKIFTests.swift */; };
 		B12EEE6A1DE0B2FD00D0791F /* ViewControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12EEE691DE0B2FD00D0791F /* ViewControllerHelper.swift */; };
@@ -62,7 +61,6 @@
 		9C7C889E1D00BAC00022B8B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C7C88A01D00BAC00022B8B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C7C88A51D00BAC00022B8B2 /* iOSTestingExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSTestingExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C7C88A91D00BAC00022B8B2 /* iOSTestingExampleSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = iOSTestingExampleSnapshotTests.swift; path = ../iOSTestingExampleSnapshotTests.swift; sourceTree = "<group>"; };
 		9C7C88AB1D00BAC00022B8B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C7C88B01D00BAC00022B8B2 /* iOSTestingExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSTestingExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C7C88B41D00BAC00022B8B2 /* iOSTestingExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSTestingExampleUITests.swift; sourceTree = "<group>"; };
@@ -142,7 +140,6 @@
 			children = (
 				B12EEE6B1DE0B38900D0791F /* ReferenceImages_64 */,
 				B12EEE691DE0B2FD00D0791F /* ViewControllerHelper.swift */,
-				9C7C88A91D00BAC00022B8B2 /* iOSTestingExampleSnapshotTests.swift */,
 			);
 			path = SnapshotTests;
 			sourceTree = "<group>";
@@ -598,7 +595,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C7C88AA1D00BAC00022B8B2 /* iOSTestingExampleSnapshotTests.swift in Sources */,
 				4316EDAD1D04AAEF00DEF70A /* iOSTestingExampleUnitTests.swift in Sources */,
 				B12EEE6A1DE0B2FD00D0791F /* ViewControllerHelper.swift in Sources */,
 			);
