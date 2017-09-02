@@ -4,11 +4,10 @@ Repository contains simple iOS application written in Swift with a set of exempl
 - KIF
 - FBSnapshotTestCase
 - Xcode UI Testing
-- fastlane
 
 In order project to run, you need following software installed: 
-- Xcode 8.X https://developer.apple.com/xcode/
-- Cocoapods 1.0.1 https://cocoapods.org
+- Xcode 9 https://developer.apple.com/xcode/
+- Cocoapods 1.3.1 https://cocoapods.org
 
 TIPS:
 - to execute entire test suite, go to Xcode Product > Test or use command+U shortcut
