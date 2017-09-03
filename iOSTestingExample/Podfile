@@ -8,6 +8,7 @@ target 'iOSTestingExampleTests' do
     pod 'FBSnapshotTestCase', '~> 2.1.4'
     pod 'SnapKit', '~> 3.0.2'
     pod 'OCMock'
+    pod 'Cuckoo'
 end
 
 target 'iOSTestingExampleUITests' do

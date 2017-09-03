@@ -22,4 +22,10 @@ class iOSTestingExampleUnitTests: XCTestCase {
     func test() {
         XCTAssertNotNil(UIStoryboard(name: "Main", bundle:nil))
     }
+    
+    func performanceTest() {
+        self.measure {
+            NSLog("Hello world!")
+        }
+    }
 }

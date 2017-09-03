@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A319" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -55,12 +55,21 @@
                                     </mask>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6d-o0-bN0">
+                                <rect key="frame" x="151" y="460" width="72" height="30"/>
+                                <state key="normal" title="call github"/>
+                                <connections>
+                                    <action selector="callGithubButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xw3-bx-dpZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="f6d-o0-bN0" firstAttribute="top" secondItem="Bpf-c2-J5J" secondAttribute="bottom" constant="41.5" id="5lr-Uc-1Ci"/>
                             <constraint firstItem="9W7-jh-3XE" firstAttribute="leading" secondItem="ohf-4H-ngs" secondAttribute="leading" id="FY1-Cc-K5X"/>
                             <constraint firstItem="9W7-jh-3XE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O1H-rb-PTQ"/>
                             <constraint firstItem="Bpf-c2-J5J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P2g-ZX-zQ9"/>
+                            <constraint firstItem="f6d-o0-bN0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dJo-iZ-o57"/>
                             <constraint firstItem="ohf-4H-ngs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="diZ-ZF-mUP"/>
                             <constraint firstItem="ohf-4H-ngs" firstAttribute="top" secondItem="9W7-jh-3XE" secondAttribute="bottom" constant="8" symbolic="YES" id="ews-nS-BWu"/>
                             <constraint firstItem="ohf-4H-ngs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kya-Yq-rqd"/>
@@ -74,6 +83,7 @@
                     </view>
                     <connections>
                         <outlet property="answerTextField" destination="ohf-4H-ngs" id="PFc-gZ-LwW"/>
+                        <outlet property="callGithubButtonTapped" destination="f6d-o0-bN0" id="bbK-ui-0uz"/>
                         <outlet property="sendButton" destination="Bpf-c2-J5J" id="V8S-ds-oV3"/>
                     </connections>
                 </viewController>

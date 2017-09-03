@@ -17,6 +17,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
 
+    @IBAction func callGithubButtonTapped(_ sender: Any) {
+        
+    }
+    
     @IBAction func sendButtonTapped(_ sender: AnyObject) {
         self.answerTextField.text = ""
         self.answerTextField.resignFirstResponder()
