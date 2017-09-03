@@ -32,9 +32,9 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bpf-c2-J5J">
-                                <rect key="frame" x="170.5" y="388.5" width="34" height="30"/>
+                                <rect key="frame" x="140" y="388.5" width="95" height="30"/>
                                 <accessibility key="accessibilityConfiguration" identifier="sendButton"/>
-                                <state key="normal" title="send"/>
+                                <state key="normal" title="send answear"/>
                                 <connections>
                                     <action selector="sendButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fwF-6I-PXa"/>
                                 </connections>
@@ -83,7 +83,6 @@
                     </view>
                     <connections>
                         <outlet property="answerTextField" destination="ohf-4H-ngs" id="PFc-gZ-LwW"/>
-                        <outlet property="callGithubButtonTapped" destination="f6d-o0-bN0" id="bbK-ui-0uz"/>
                         <outlet property="sendButton" destination="Bpf-c2-J5J" id="V8S-ds-oV3"/>
                     </connections>
                 </viewController>
