@@ -11,6 +11,15 @@ import XCTest
 import Cuckoo
 @testable import iOSTestingExample
 
+class MockURLSession: URLSession {
+    var dataTaskCallCount = 0
+    
+    override func dataTask(with url: URL, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Swift.Void) -> URLSessionDataTask {
+        dataTaskCallCount += 1
+        return URLSessionDataTask()
+    }
+}
+
 class iOSTestingExampleUnitTests: XCTestCase {
     
     var sut: ViewController!
@@ -24,18 +33,7 @@ class iOSTestingExampleUnitTests: XCTestCase {
         sut = nil
         super.tearDown()
     }
-    
-    // MARK - Test mock
-    
-    class MockURLSession: URLSession {
-        var dataTaskCallCount = 0
-        
-        override func dataTask(with url: URL, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Swift.Void) -> URLSessionDataTask {
-            dataTaskCallCount += 1
-            return URLSessionDataTask()
-        }
-    }
-    
+
     // MARK - Mocked tests
     
     // TODO: Fix failing test
