@@ -20,13 +20,7 @@ class ViewController: UIViewController {
     // MARK - IBActions
     
     @IBAction func callGithubButtonTapped(_ sender: Any) {
-        let url = URL(string: "http://www.github.com")
-        let task = URLSession.shared.dataTask(with: url!) {(data, response, error) in
-            if let httpResponse = response as? HTTPURLResponse {
-                self.showAlertWithMessage("\(httpResponse.statusCode)")
-            }
-        }
-        task.resume()
+        callGithub(session: URLSession.shared)
     }
     
     @IBAction func sendButtonTapped(_ sender: AnyObject) {
@@ -34,9 +28,20 @@ class ViewController: UIViewController {
         self.answerTextField.resignFirstResponder()
     }
     
-    // MARK - Helper method
+    // MARK - Helper methods
     
-    fileprivate func showAlertWithMessage(_ message: String) {
+    func callGithub(session: URLSession) {
+        let url = URL(string: "http://www.github.com")
+        let task = session.dataTask(with: url!) {(data, response, error) in
+            
+        if let httpResponse = response as? HTTPURLResponse {
+            self.showAlertWithMessage("\(httpResponse.statusCode)")
+            }
+        }
+        task.resume()
+    }
+    
+    func showAlertWithMessage(_ message: String) {
         let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
